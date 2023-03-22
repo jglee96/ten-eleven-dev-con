@@ -10,8 +10,15 @@ const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route index element={<Home />} />
-      <Route path="zustand" lazy={() => import('./routes/zustand')} />
-      <Route path="recoil" lazy={() => import('./routes/recoil')} />
+      <Route path="props" lazy={() => import('./routes/props')} />
+      <Route
+        path="zustand"
+        lazy={() => import('@ten-eleven-dev-con/zustand-example')}
+      />
+      <Route
+        path="recoil"
+        lazy={() => import('@ten-eleven-dev-con/recoil-example')}
+      />
     </Route>
   )
 );
