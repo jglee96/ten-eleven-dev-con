@@ -22,11 +22,7 @@ export default function Home() {
               flexDirection: 'column',
             }}
           >
-            <CardMedia
-              component="img"
-              image="https://source.unsplash.com/random"
-              alt="random"
-            />
+            <CardMedia component="img" image={card.img} alt="random" />
             <CardContent>
               <Typography variant="h5" component="div">
                 {card.title}
