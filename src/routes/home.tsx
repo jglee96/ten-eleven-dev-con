@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import json from '../assets/card_list.json';
+import json from '../assets/resource/card_list.json';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
               flexDirection: 'column',
             }}
           >
-            <CardMedia component="img" image={card.img} alt="random" />
+            <CardMedia component="img" src={card.img} alt="random" />
             <CardContent>
               <Typography variant="h5" component="div">
                 {card.title}
