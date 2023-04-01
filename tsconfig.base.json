@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ten-eleven-dev-con/dom-example": ["dom-example/src/index.ts"],
       "@ten-eleven-dev-con/recoil-example": ["recoil-example/src/index.ts"],
       "@ten-eleven-dev-con/zustand-example": ["zustand-example/src/index.ts"]
     }

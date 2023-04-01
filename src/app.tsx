@@ -5,11 +5,20 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import Home from './routes/home';
+import { ThemeProvider } from '@emotion/react';
+import { createTheme, CssBaseline } from '@mui/material';
+import NavBar from './components/NavBar';
+
+const theme = createTheme();
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/">
-      <Route index element={<Home />} />
+    <Route element={<NavBar />}>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="dom"
+        lazy={() => import('@ten-eleven-dev-con/dom-example')}
+      />
       <Route path="props" lazy={() => import('./routes/props')} />
       <Route
         path="zustand"
@@ -24,7 +33,12 @@ const routes = createBrowserRouter(
 );
 
 export function App() {
-  return <RouterProvider router={routes} />;
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <RouterProvider router={routes} />{' '}
+    </ThemeProvider>
+  );
 }
 
 export default App;

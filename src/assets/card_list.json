@@ -1,0 +1,28 @@
+{
+  "component": [
+    {
+      "path": "/dom",
+      "title": "DOM",
+      "subtitle": "HTML",
+      "body": "HTML Counter Example"
+    },
+    {
+      "path": "/props",
+      "title": "Props",
+      "subtitle": "Prop Drilling",
+      "body": "Prop Drilling"
+    },
+    {
+      "path": "/recoil",
+      "title": "Recoil",
+      "subtitle": "atom",
+      "body": "Recoil lets you create a data-flow graph that flows from atoms(shared state) through selectors (pure functions) and down into your React components."
+    },
+    {
+      "path": "/zustand",
+      "title": "Zustand",
+      "subtitle": "store",
+      "body": "🐻 Bear necessities for state management in React"
+    }
+  ]
+}
