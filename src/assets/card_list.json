@@ -7,6 +7,12 @@
       "body": "HTML Counter Example"
     },
     {
+      "path": "/state",
+      "title": "State",
+      "subtitle": "React State",
+      "body": "React Simple Counter Example"
+    },
+    {
       "path": "/props",
       "title": "Props",
       "subtitle": "Prop Drilling",

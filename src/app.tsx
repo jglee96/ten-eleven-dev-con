@@ -16,6 +16,10 @@ const routes = createBrowserRouter(
     <Route element={<NavBar />}>
       <Route path="/" element={<Home />} />
       <Route
+        path="state"
+        lazy={() => import('@ten-eleven-dev-con/state-example')}
+      />
+      <Route
         path="dom"
         lazy={() => import('@ten-eleven-dev-con/dom-example')}
       />
