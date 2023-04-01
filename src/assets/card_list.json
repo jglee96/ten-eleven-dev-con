@@ -1,0 +1,39 @@
+{
+  "component": [
+    {
+      "path": "/dom",
+      "title": "DOM",
+      "subtitle": "HTML",
+      "body": "HTML Counter Example",
+      "img": "src/assets/HTML5_logo_and_wordmark.svg"
+    },
+    {
+      "path": "/state",
+      "title": "State",
+      "subtitle": "React State",
+      "body": "React Simple Counter Example",
+      "img": "src/assets/React-icon.svg"
+    },
+    {
+      "path": "/props",
+      "title": "Props",
+      "subtitle": "Prop Drilling",
+      "body": "Prop Drilling",
+      "img": "src/assets/passing_data_prop_drilling.webp"
+    },
+    {
+      "path": "/recoil",
+      "title": "Recoil",
+      "subtitle": "atom",
+      "body": "Recoil lets you create a data-flow graph that flows from atoms(shared state) through selectors (pure functions) and down into your React components.",
+      "img": "src/assets/Recoil-icon.svg"
+    },
+    {
+      "path": "/zustand",
+      "title": "Zustand",
+      "subtitle": "store",
+      "body": "🐻 Bear necessities for state management in React",
+      "img": "src/assets/zustand-banner.jpg"
+    }
+  ]
+}
