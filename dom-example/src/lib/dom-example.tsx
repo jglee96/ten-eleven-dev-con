@@ -24,9 +24,6 @@ export const Component = () => {
         <button id="increase">+</button>
         <button id="decrease">-</button>
       </div>
-      <div>
-        <img src="/src/assets/htmlscript.png" width="300px" alt="code" />
-      </div>
     </div>
   );
 };
