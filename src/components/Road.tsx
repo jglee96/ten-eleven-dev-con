@@ -8,6 +8,7 @@ interface Props {
 const Road = ({ project, setProject }: Props) => {
   return (
     <Box sx={{ border: '3px dashed grey' }}>
+      <Typography variant="h5">Road Component</Typography>
       <Button
         onClick={() => {
           setProject((prev) => ({
