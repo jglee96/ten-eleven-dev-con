@@ -8,8 +8,5 @@
       "import": "./index.mjs",
       "require": "./index.js"
     }
-  },
-  "dependencies": {
-    "recoil": "^0.7.7"
   }
 }

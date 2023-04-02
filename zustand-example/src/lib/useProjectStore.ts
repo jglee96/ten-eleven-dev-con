@@ -1,4 +1,3 @@
-import { Action } from '@remix-run/router';
 import { create } from 'zustand';
 
 export interface Project {
