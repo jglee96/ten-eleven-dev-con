@@ -8,8 +8,7 @@ import Home from './routes/home';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme, CssBaseline } from '@mui/material';
 import NavBar from './components/NavBar';
-
-const theme = createTheme();
+import { useDarkModeStore } from './useDarkModeStore';
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -37,6 +36,13 @@ const routes = createBrowserRouter(
 );
 
 export function App() {
+  const darkMode = useDarkModeStore((state) => state.darkMode);
+  const theme = createTheme({
+    palette: {
+      mode: darkMode ? 'dark' : 'light',
+    },
+  });
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
